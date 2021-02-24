@@ -2,7 +2,7 @@
   <%= f.label field.attribute %>
 </div>
 <div class="field-unit__field">
-  <%= image_tag field.url if field.url.present? %>
+  <%= image_tag field.url, width: '100' if field.url.present? %>
   <%= f.hidden_field field.attribute, value: field.cached_value %>
   <%= f.file_field field.attribute %>
 </div>
